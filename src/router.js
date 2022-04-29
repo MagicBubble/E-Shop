@@ -31,11 +31,11 @@ var router = new VueRouter({
     {
       path: '/home/goodscomment/:id',
       component: GoodsComment,
-      name: 'goodscomment'
-    }
+      name: 'goodscomment',
+    },
   ],
   // <router-link>被点击激活的时候就会被加上 mui-active 这个class
-  linkActiveClass: 'mui-active'
+  linkActiveClass: 'mui-active',
 });
 
 // 把路由对象暴露出去

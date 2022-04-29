@@ -111,7 +111,7 @@ mui('.mui-scroll-wrapper').scroll({
 - 最终，我们选择了 plan B 移除严格模式： 使用这个插件 babel-plugin-transform-remove-strict-mode
 
 5.  刚进入 图片分享页面的时候， 滑动条无法正常工作， 经过我们认真的分析，发现， 如果要初始化 滑动条，必须要等 DOM 元素加载完毕，所以，我们把 初始化 滑动条 的代码，搬到了 mounted 生命周期函数中；
-6.  当 滑动条 调试 OK 后，发现， tabbar 无法正常工作了，这时候，我们需要把 每个 tabbar 按钮的 样式中 `mui-tab-item` 重新改一下名字；
+6.  当滑动条调试 OK 后，发现， tabbar 无法正常工作了，这时候我们需要把 每个 tabbar 按钮的 样式中 `mui-tab-item` 重新改一下名字；
 7.  获取所有分类，并渲染 分类列表；
 
 ### 制作图片列表区域
