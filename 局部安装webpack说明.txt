@@ -1,0 +1,18 @@
+首先 cnpm init -y 生成默认的package.json(yes的意思，在init的时候省去了敲回车的步骤，生成的默认的package.json)
+然后cnpm i 根据package.json生成 node_modules 包，或者类似可以cnpm i jquery安装单个包
+黑马教程中使用的是webpack全局安装，我在练习时使用的是局部安装。cnpm：淘宝镜像
+终端默认为非管理员权限打开的
+然后cnpm install webpack -D局部安装webpack
+打包时 全局安装webpack直接用命令 webpack + 路径 + 路径，而局部安装的需要用node_modules/.bin/webpack + 路径 + 路径
+       写好webpack.config配置文件后node_modules/.bin/webpack就可打包
+       同理，开启webpack-dev-server时也是这样的规则
+如：
+全局安装 webpack 的用 webpack -v 来查看 webpack 版本
+局部用 node_modules/.bin/webpack -v 来查看 webpack 版本
+用 node_modules/.bin/webpack-cli -v 来查看 webpack-cli 版本
+
+也可以在package.json中scripts中写好对应关系
+
+注意：webpack-dev-server必须使用局部webpack
+注意：.json文件内不能写注释
+注意：每次运行项目前，需要修改package.json中的"dev": "host 192.168.0.109"，使用命令行ipconfig查看本地ip地址并修改

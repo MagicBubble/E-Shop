@@ -1,0 +1,16 @@
+{
+  "presets": ["@babel/preset-env", "mobx"],
+  "plugins": [
+    //注意：新版本中 plugins数组第二个参数不支持数组了
+    "@babel/plugin-transform-runtime",
+    [
+      "component",
+      {
+        "libraryName": "mint-ui",
+        "style": true
+      }
+    ],
+    // 取消webpack的严格模式，由于新版本原因，与教程下载的插件和写的命令不一样
+    ["@babel/plugin-transform-modules-commonjs", { "strictMode": false }]
+  ]
+}
